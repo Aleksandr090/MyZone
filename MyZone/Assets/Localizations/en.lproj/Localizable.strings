@@ -1,0 +1,90 @@
+/* 
+  Localizable.strings
+  MyZone
+
+  
+*/
+
+// Test
+home="Go To Customer Care";
+
+
+// Authentication, On Boarding
+version="Version";
+
+select_location_title="Pick your area and we will show you posts nearby!";
+feed_radius="Feed Radius:";
+done="Done";
+km="KM";
+
+login_title="Let's Login.";
+login_username_field="User Name Or Email";
+login_password_field="Password";
+login_cta="Login";
+forgot_password_cta="Forgot your password?";
+register_cta="Register";
+
+register_title="By Continuing you agree to your Terms of Service and Privacy Policy";
+register_username_field="User Name Or Email";
+register_password_field="Password";
+register_confirm_password_field="Confirm Password";
+register_email_field="Email";
+register_phone_field="Phone(Optional)";
+register_cta="Continue";
+already_have_account="Already have an account?";
+register_login_cta="Login";
+
+forgot_password_title="Forgot your password?";
+forgot_password_hint="Enter the email address associated with your account";
+forgot_password_email_field="Email";
+forgot_password_cta="Next";
+
+
+// Side Menu
+side_menu_my_comment="My Comment";
+side_menu_my_post="My Post";
+side_menu_my_interests="My Interests";
+side_menu_saved_people="Saved People";
+side_menu_saved_topics="Saved Topics";
+side_menu_dark_mode="Dark Mode";
+side_menu_language="Language";
+side_menu_settings="Settings";
+side_menu_feed="Feed";
+side_menu_messages="Messages";
+side_menu_notifications="Notifications";
+side_menu_account="Account";
+side_menu_logout="Logout";
+side_menu_contact="Contact";
+side_menu_help="Help";
+side_menu_tech_support="Tech Support";
+side_menu_instagram="Instagram";
+side_menu_facebook="Facebook";
+side_menu_twitter="Twitter";
+side_menu_share="Share";
+
+
+// Login Alert
+login_alert_title="Please Login to continue.";
+login_alert_login_cta="Login";
+login_alert_cancel_cta="Cancel";
+
+
+// Home
+home_title="Home";
+home_feed_option_recent="Recent";
+home_feed_option_trending="Trending";
+home_feed_option_popular="Popular";
+home_zone="Zone";
+home_report="Report";
+
+
+// Explore
+explore_title="Explore";
+
+
+//Notifications
+notifications_title="Notifications";
+
+
+// Message
+message_title="Message";

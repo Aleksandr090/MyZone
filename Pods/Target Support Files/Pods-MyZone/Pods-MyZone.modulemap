@@ -1,0 +1,6 @@
+framework module Pods_MyZone {
+  umbrella header "Pods-MyZone-umbrella.h"
+
+  export *
+  module * { export * }
+}

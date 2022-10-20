@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="134" id="KGk-i7-Jjw" customClass="AddVideoCell" customModule="MyZone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="134"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="324" height="134"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fGw-jI-tMu" customClass="VideoView" customModule="MyZone" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="324" height="124"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusValue">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUw-EH-L8Q">
+                        <rect key="frame" x="274" y="0.0" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="T84-xz-dBi"/>
+                            <constraint firstAttribute="width" constant="40" id="qf0-7P-7dV"/>
+                        </constraints>
+                        <state key="normal" image="remove"/>
+                        <connections>
+                            <action selector="removeVideoAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="r37-sf-zuX"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50b-gz-afS">
+                        <rect key="frame" x="142" y="42" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="i2X-wH-nBj"/>
+                            <constraint firstAttribute="height" constant="40" id="wJD-8Q-WVH"/>
+                        </constraints>
+                        <state key="normal" image="PlayButton"/>
+                        <connections>
+                            <action selector="playVideo:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="nbb-1N-duB"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fGw-jI-tMu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="1FM-oh-SdA"/>
+                    <constraint firstItem="50b-gz-afS" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-5" id="AVf-EZ-oe5"/>
+                    <constraint firstAttribute="bottom" secondItem="fGw-jI-tMu" secondAttribute="bottom" constant="10" id="iLr-rv-QFu"/>
+                    <constraint firstItem="50b-gz-afS" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="myE-zX-kP1"/>
+                    <constraint firstItem="fGw-jI-tMu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="nHn-n6-uTj"/>
+                    <constraint firstAttribute="trailing" secondItem="fGw-jI-tMu" secondAttribute="trailing" id="ntM-7O-j5h"/>
+                    <constraint firstAttribute="trailing" secondItem="YUw-EH-L8Q" secondAttribute="trailing" constant="10" id="pDD-1j-sdp"/>
+                    <constraint firstItem="YUw-EH-L8Q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="rhZ-l1-gJg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="playButton" destination="50b-gz-afS" id="bhH-NL-gh5"/>
+                <outlet property="videoView" destination="fGw-jI-tMu" id="50p-TH-Z0N"/>
+            </connections>
+            <point key="canvasLocation" x="-77" y="72"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="PlayButton" width="21" height="22"/>
+        <image name="remove" width="15" height="15"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

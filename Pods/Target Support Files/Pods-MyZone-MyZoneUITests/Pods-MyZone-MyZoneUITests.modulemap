@@ -1,0 +1,6 @@
+framework module Pods_MyZone_MyZoneUITests {
+  umbrella header "Pods-MyZone-MyZoneUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
